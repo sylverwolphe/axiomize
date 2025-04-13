@@ -8,16 +8,16 @@
         :root {
             --bg-color: #f8f8f8;
             --text-color: #222;
-            --accent: #5c5cff;
-            --light-accent: #e6e6ff;
+            --accent: #226677;
+            --light-accent: #e6f0f2;
         }
         
         @media (prefers-color-scheme: dark) {
             :root {
                 --bg-color: #111;
                 --text-color: #eee;
-                --accent: #7070ff;
-                --light-accent: #1f1f3f;
+                --accent: #36889c;
+                --light-accent: #1a3339;
             }
         }
         
@@ -146,7 +146,7 @@
             margin-bottom: 5px;
         }
         
-        .team-member a {
+        .team-member a, #prototype a {
             color: var(--accent);
             text-decoration: none;
             margin-bottom: 10px;
@@ -198,7 +198,7 @@
     
     <div id="prototype" class="page">
         <h1>Efficiency Filter Prototype</h1>
-        <p>This prototype demonstrates our code efficiency filter. Similar to Galois' proven-no-change code translator, our system optimizes your code while maintaining functional equivalence.</p>
+        <p>This prototype demonstrates our code efficiency filter. Similar to Galois' <a href="https://c2rust.com/" target="_blank">proven-no-change code translator</a>, our system optimizes your code while maintaining functional equivalence.</p>
         
         <div class="filter-box">
             <textarea placeholder="// Paste your code here to optimize"></textarea>
