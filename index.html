@@ -137,6 +137,23 @@
             opacity: 0.9;
         }
         
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+        }
+        
         .team-member {
             margin-bottom: 30px;
             padding-bottom: 20px;
@@ -201,6 +218,10 @@
         <h1>Setting new standards for code efficiency</h1>
         <p>We're building the next generation of code efficiency tooling that maintains security while improving performance.</p>
         <p>Our filter technology allows for seamless code optimization with rigorous guarantees.</p>
+        
+        <div class="video-container">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/1gbB0yohBiw" title="Axiomize Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
     
     <div id="prototype" class="page">
@@ -257,6 +278,6 @@
     </script>
     
     <!-- Simple analytics (Plausible) - Privacy-friendly alternative to Google Analytics -->
-    <script defer data-domain="axiomize.ai" src="https://plausible.io/js/script.js"></script>
+    <script defer data-domain="yourdomainhere.com" src="https://plausible.io/js/script.js"></script>
 </body>
 </html>
